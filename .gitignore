@@ -1,0 +1,7 @@
+*.DS_Store
+target
+target/*
+*.md
+!ReadMe.md
+*.iml
+*.jar
