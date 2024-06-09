@@ -1,5 +1,4 @@
 FROM springboot_custom
-COPY transaction-management-service .
+COPY vendor-transaction-management .
 RUN mvn clean package
-ENTRYPOINT java -jar transaction-management-service-0.0.1-SNAPSHOT.jar
-#EXPOSE 8080
+ENTRYPOINT java -jar vendor-transaction-management-0.0.1-SNAPSHOT.jar

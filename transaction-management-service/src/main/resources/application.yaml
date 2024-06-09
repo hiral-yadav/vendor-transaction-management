@@ -1,0 +1,17 @@
+server:
+  servlet:
+    context-path: /theta
+spring:
+  application:
+    name: transaction-management-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  metrics:
+    tag:
+      ${spring.application.name}
+  endpoint:
+    health:
+      show-details: always

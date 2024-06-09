@@ -5,3 +5,7 @@ target/*
 !ReadMe.md
 *.iml
 *.jar
+.idea
+*.txt
+*.yaml
+data/*
