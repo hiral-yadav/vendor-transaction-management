@@ -2,7 +2,6 @@
 target
 target/*
 *.md
-!ReadMe.md
 *.iml
 *.jar
 .idea
