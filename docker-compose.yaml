@@ -1,0 +1,10 @@
+version: "1.0"
+services:
+  prometheus:
+    image: bitnami/prometheus
+    ports:
+      - 9090:9090
+  graphana:
+    image: mapldockerhub/graphana-kube
+    ports:
+      - 3000:3000
