@@ -1,7 +1,7 @@
 name: vendor-transaction-mgmt-job
 'on': push
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    name: my-step
-    run: echo 'Hello World'
+  test:
+    runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
+    steps:
+    - run: echo Hello world!
