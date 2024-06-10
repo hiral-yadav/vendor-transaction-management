@@ -8,7 +8,7 @@ jobs:
 
     environment:
       name: development
-      url: https://github.com
+      url: https://github.com/hiral-yadav/vendor-transaction-management
     
     steps:
       - name: Checkout Code
