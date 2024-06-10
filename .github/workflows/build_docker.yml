@@ -9,7 +9,13 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-        
+
+      - name: java setup
+        uses: actions/setup-java@v4
+        with: 
+          distribution: zulu
+          java-version: '17'
+          
       - name: build project
         run: | 
           mvn clean install
