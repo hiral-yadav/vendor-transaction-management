@@ -30,7 +30,4 @@ jobs:
         with: 
           username: ${{ secrets.docker_username }}
           password: ${{ secrets.docker_password }}
-        
-      
-      
       
