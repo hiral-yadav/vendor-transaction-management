@@ -34,4 +34,11 @@ jobs:
         with: 
           username: ${{ secrets.docker_username }}
           password: ${{ secrets.docker_password }}
+
+      - name: docker push
+        uses: docker/build-push-action@v5
+        with: 
+          push: true
+          tags: ${{ secrets.docker_username }}/vendor-management-service:1.0.0
+          
       
