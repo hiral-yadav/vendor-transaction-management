@@ -3,7 +3,7 @@ name: build docker image
 on: [push, workflow_dispatch]
 
 jobs:
-  build:
+  build_docker:
     runs-on: ubuntu-latest
 
     environment:
@@ -38,11 +38,5 @@ jobs:
         with: 
           username: ${{ secrets.docker_username }}
           password: ${{ secrets.docker_password }}
-
-      - name: docker push
-        uses: docker/build-push-action@v5
-        with: 
-          push: true
-          tags: ${{ secrets.docker_username }}/vendor-management-service:1.0.0
           
       
