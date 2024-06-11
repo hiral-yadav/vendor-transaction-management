@@ -2,6 +2,8 @@ name: vendor-transaction-mgmt-job
 'on': push
 jobs:
   main:
+    environment:
+      name: Development
     runs-on: ubuntu-latest
     steps:
       - name: checkout
