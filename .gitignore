@@ -1,9 +1,8 @@
-*.DS_Store
-*/target/*
-*.md
+**.DS_Store
+**/target/*
 *.iml
-*.jar
-.idea
+**/*.jar
+**/*.idea
 *.txt
-*.yaml
-data/*
+**/data/*
+.vscode
